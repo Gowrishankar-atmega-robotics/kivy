@@ -1,18 +1,23 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
 
-kv = '''
+k = '''
 Screen:
     BoxLayout:
-        orientation:"vertical"
-    MDToolbar:
-        title: "AtmegaRobotics"
-    MDLabel:
-        text:"AR"
-        halign:"center"
+        orientation : "vertical"
+        MDToolbar:
+            title: "Atmega"
+            icon : "Git"
+            type : "top"
+            left_action_items:[["Menu",lambda x : x]]
+            md_bg_color: (0, 0 , 0, 0.55)
+        MDLabel:
+            text:"hello atmega"
+            halign: "center"
+
 '''
 
-class demo(MDApp):
+class test(MDApp):
     def build(self):
-        return Builder.load_string(kv);
-demo().run();
+        return Builder.load_string(k)
+test().run()
