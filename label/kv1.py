@@ -1,3 +1,5 @@
+import os 
+os.environ["KIVY_TEXT"] = "pil"
 from kivymd.app import MDApp
 from kivy.lang import Builder
 
@@ -9,7 +11,7 @@ Screen:
             title: "Atmega"
             icon : "Git"
             type : "top"
-            left_action_items:[["Menu",lambda x : x]]
+            left_action_items:[["menu",lambda x : x]]
             md_bg_color: (0, 0 , 0, 0.55)
         MDLabel:
             text:"hello atmega"

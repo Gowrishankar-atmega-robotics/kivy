@@ -1,3 +1,5 @@
+import os 
+os.environ["kivy_text"] = 'pil'
 from kivy.lang import Builder
 from kivymd.app import MDApp
 
