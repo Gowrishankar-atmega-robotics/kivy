@@ -3,7 +3,8 @@ os.environ["KIVY_TEXT"] = "pil"
 
 from kivy.lang import Builder 
 from kivymd.app import MDApp 
-
+#from kivy.uix import label
+#print(dir(label))
 kv = '''
 MDScreen:
     MDFloatingActionButtonSpeedDial:
