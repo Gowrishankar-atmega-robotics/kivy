@@ -8,6 +8,6 @@ class demo(MDApp):
         bt = MDRectangleFlatButton(text="click here",pos=(500,300),on_release = self.fn);
         screen.add_widget(bt);
         return screen 
-    def fn(self , anyvari):
+    def fn(self, event):
         print("AR");
 demo().run();
