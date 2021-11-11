@@ -1,7 +1,7 @@
 from kivymd.app import MDApp 
 from kivymd.uix.screen import Screen
 from kivy.lang import Builder 
-import helpers
+from helpers import HelpX
 
 class demo(MDApp):
     def build(self):
